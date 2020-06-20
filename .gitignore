@@ -1,2 +1,9 @@
 /*
-/*/
+!/behavior_packs/
+!/worlds/
+
+/behavior_packs/*
+!/behavior_packs/CleanMc/
+
+/worlds/Bedrock level/*
+!/worlds/Bedrock level/*.json
