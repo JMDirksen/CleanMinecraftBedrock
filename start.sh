@@ -1,3 +1,3 @@
 #!/bin/bash
 cd "$(dirname "$0")"
-screen -dmS cleanmcbedrock ./loop.sh
+screen -dmS "cleanmcbedrock" "./loop.sh"

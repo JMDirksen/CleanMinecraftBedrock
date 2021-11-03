@@ -1,1 +1,3 @@
 @reboot ~/cleanmcbedrock/start.sh
+0 0 * * * ~/cleanmcbedrock/restart.sh
+15 */3 * * * ~/cleanmcbedrock/update.sh
