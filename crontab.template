@@ -1,3 +1,4 @@
-@reboot ~/cleanmcbedrock/start.sh
-0 0 * * * ~/cleanmcbedrock/restart.sh
-15 */3 * * * ~/cleanmcbedrock/update.sh
+SHELL=/bin/bash
+@reboot (echo $(date) Start; ~/cleanmcbedrock/start.sh) >> ~/cron.log 2>&1
+0 0 * * * (echo $(date) Restart; ~/cleanmcbedrock/restart.sh) >> ~/cron.log 2>&1
+15 */3 * * * (echo $(date) Update; ~/cleanmcbedrock/update.sh) >> ~/cron.log 2>&1
